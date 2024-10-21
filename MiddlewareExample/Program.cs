@@ -1,4 +1,6 @@
+using MiddlewareExample.CustomMiddleware;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddTransient<MyCustomMiddleware>();
 var app = builder.Build();
 
 //MiddlewareFactory which terminates by using Run
@@ -15,13 +17,17 @@ app.Use(async(HttpContext context , RequestDelegate next) =>
 {
     await context.Response.WriteAsync("Hello World 1");
     next(context);
+    
 });
+
+app.UseMiddleware<MyCustomMiddleware>();
 app.Use(async (HttpContext context, RequestDelegate next) =>
 {
     await context.Response.WriteAsync("Hello World 2");
     next(context);
+   
 });
-app.MapGet("/", () => "Hello aggain");
+
 
 
 

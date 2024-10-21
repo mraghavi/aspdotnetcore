@@ -23,3 +23,4 @@ D:\aspdotnetcore\MiddlewareExample\obj\Debug\net8.0\refint\MiddlewareExample.dll
 D:\aspdotnetcore\MiddlewareExample\obj\Debug\net8.0\MiddlewareExample.pdb
 D:\aspdotnetcore\MiddlewareExample\obj\Debug\net8.0\MiddlewareExample.genruntimeconfig.cache
 D:\aspdotnetcore\MiddlewareExample\obj\Debug\net8.0\ref\MiddlewareExample.dll
+D:\aspdotnetcore\MiddlewareExample\obj\Debug\net8.0\MiddlewareExample.sourcelink.json
