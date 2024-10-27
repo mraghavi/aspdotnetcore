@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\aspdotnetcore\\LoginMiddlewareApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0E67DB7F-9C78-49E7-8F21-777920E30EF4}|LoginMiddlewareApp.csproj|d:\\aspdotnetcore\\loginmiddlewareapp\\loginmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E67DB7F-9C78-49E7-8F21-777920E30EF4}|LoginMiddlewareApp.csproj|solutionrelative:loginmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E67DB7F-9C78-49E7-8F21-777920E30EF4}|LoginMiddlewareApp.csproj|d:\\aspdotnetcore\\loginmiddlewareapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E67DB7F-9C78-49E7-8F21-777920E30EF4}|LoginMiddlewareApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E67DB7F-9C78-49E7-8F21-777920E30EF4}|LoginMiddlewareApp.csproj|d:\\aspdotnetcore\\loginmiddlewareapp\\loginmiddlewareextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E67DB7F-9C78-49E7-8F21-777920E30EF4}|LoginMiddlewareApp.csproj|solutionrelative:loginmiddlewareextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginMiddlewareExtensions.cs",
+              "DocumentMoniker": "D:\\aspdotnetcore\\LoginMiddlewareApp\\LoginMiddlewareExtensions.cs",
+              "RelativeDocumentMoniker": "LoginMiddlewareExtensions.cs",
+              "ToolTip": "D:\\aspdotnetcore\\LoginMiddlewareApp\\LoginMiddlewareExtensions.cs",
+              "RelativeToolTip": "LoginMiddlewareExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T11:03:44.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\aspdotnetcore\\LoginMiddlewareApp\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\aspdotnetcore\\LoginMiddlewareApp\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T10:59:40.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginMiddleware.cs",
+              "DocumentMoniker": "D:\\aspdotnetcore\\LoginMiddlewareApp\\LoginMiddleware.cs",
+              "RelativeDocumentMoniker": "LoginMiddleware.cs",
+              "ToolTip": "D:\\aspdotnetcore\\LoginMiddlewareApp\\LoginMiddleware.cs",
+              "RelativeToolTip": "LoginMiddleware.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwC8AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T11:00:39.274Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
