@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "xxntZiGtyZU7k9+bACI2JRcq7EzVq0KwKjGbaexlIjo=",
+  "Source": "BankingApp",
+  "BasePath": "_content/BankingApp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "BankingApp\\wwwroot",
+      "Source": "BankingApp",
+      "ContentRoot": "D:\\aspdotnetcore\\BankController\\wwwroot\\",
+      "BasePath": "_content/BankingApp",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\aspdotnetcore\\BankController\\wwwroot\\DummyStatement.pdf",
+      "SourceId": "BankingApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\aspdotnetcore\\BankController\\wwwroot\\",
+      "BasePath": "_content/BankingApp",
+      "RelativePath": "DummyStatement.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\DummyStatement.pdf"
+    }
+  ]
+}
