@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "j8crmNFmDW6KINRqWHj0EUz2o9eRlqvQIz0OhMgL7us=",
+  "Source": "CrudAppBackend",
+  "BasePath": "_content/CrudAppBackend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
