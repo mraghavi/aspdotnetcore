@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CrudAppBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f1b027918704a6e6f9dba894d35953a5908c743")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8de34003845f273966f8185e13db1f04317c9e1e")]
 [assembly: System.Reflection.AssemblyProductAttribute("CrudAppBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CrudAppBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

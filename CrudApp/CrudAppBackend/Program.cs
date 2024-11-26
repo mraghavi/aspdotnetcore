@@ -1,32 +1,37 @@
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllers();  // Required for controllers
+builder.Services.AddControllers();
+
+// Add CORS policy (adjust this to match the origin of your Angular app)
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAll", policy =>
+    options.AddPolicy("AllowAngularApp", policy =>
     {
-        policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+        policy.WithOrigins("http://localhost:4200") // Angular app origin
+              .AllowAnyHeader()
+              .AllowAnyMethod();
     });
 });
 
-// Add Swagger services
-builder.Services.AddEndpointsApiExplorer();  // Required for endpoint discovery
-builder.Services.AddSwaggerGen();  // Required to add Swagger support
+// Add Swagger/OpenAPI
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-app.UseCors("AllowAll");
-app.UseHttpsRedirection();
-
-// Enable Swagger middleware
-app.UseSwagger();  // This will serve the Swagger JSON
-app.UseSwaggerUI(c =>
+if (app.Environment.IsDevelopment())
 {
-    c.SwaggerEndpoint("/swagger/v1/swagger.json", "API V1");
-    c.RoutePrefix = string.Empty;  // Set to empty to make Swagger UI available at root (localhost:7041)
-});
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
 
-app.MapControllers();  // Map controller routes
+// Enable CORS middleware
+app.UseCors("AllowAngularApp");
+
+app.UseAuthorization();
+
+app.MapControllers();
+
 app.Run();

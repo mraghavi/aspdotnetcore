@@ -1,0 +1,35 @@
+<div class="todo-container">
+    <h1>Todo App</h1>
+    
+    <!-- Input to add a new Todo -->
+    <div class="todo-input">
+      <input type="text" [(ngModel)]="newTodo.title" placeholder="Enter a new todo">
+      <button (click)="addTodo()">Add</button>
+    </div>
+  
+    <!-- Edit Todo Section -->
+    <div *ngIf="isEditing" class="edit-todo">
+      <!-- Only show input if editingTodo exists -->
+      <input [(ngModel)]="editingTodo.title" placeholder="Edit your todo" *ngIf="editingTodo">
+      <button (click)="saveEdit()">Save</button>
+      <button (click)="cancelEdit()">Cancel</button>
+    </div>
+  
+    <!-- Todo list -->
+    <div *ngFor="let todo of todos">
+      <div class="todo-item">
+        <input type="checkbox" [(ngModel)]="todo.isCompleted" (change)="toggleComplete(todo)">
+        
+        <!-- Display Todo title or input for editing -->
+        <span *ngIf="!isEditing || (editingTodo && editingTodo.id !== todo.id)" [ngClass]="{'completed': todo.isCompleted}">
+          {{ todo.title }}
+        </span>
+  
+        <input *ngIf="isEditing && editingTodo && editingTodo.id === todo.id" [(ngModel)]="editingTodo.title">
+        
+        <button *ngIf="!isEditing" (click)="editTodo(todo)">Edit</button>
+        <button (click)="deleteTodo(todo.id)">Delete</button>
+      </div>
+    </div>
+  </div>
+  

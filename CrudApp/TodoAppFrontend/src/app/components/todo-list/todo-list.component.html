@@ -1,9 +1,0 @@
-<h1>Todo List</h1>
-        <ul>
-            <li *ngFor="let todo of todos">
-                <input type="checkbox" [(ngModel)]="todo.isCompleted" (change)="updateTodo(todo)" />
-                {{ todo.title }}
-                <button (click)="deleteTodo(todo.id)">Delete</button>
-            </li>
-        </ul>
-        <app-todo-form (todoCreated)="addTodo($event)"></app-todo-form>

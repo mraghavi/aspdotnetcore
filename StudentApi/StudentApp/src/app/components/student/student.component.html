@@ -1,0 +1,22 @@
+<!-- Add or Edit Student Form -->
+<form (ngSubmit)="saveStudent()">
+    <label for="name">Name:</label>
+    <input type="text" id="name" [(ngModel)]="tempName" name="name" required>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" [(ngModel)]="tempAge" name="age" required>
+
+    <label for="course">Course:</label>
+    <input type="text" id="course" [(ngModel)]="tempCourse" name="course" required>
+
+    <button type="submit">{{ isEditing ? 'Update Student' : 'Add Student' }}</button>
+</form>
+
+<!-- List of Students -->
+<ul>
+  <li *ngFor="let student of students">
+    {{ student.name }} - {{ student.course }} - {{ student.age }}
+    <button (click)="editStudent(student)">Edit</button>
+    <button (click)="deleteStudent(student.id)">Delete</button>
+  </li>
+</ul>
