@@ -3,6 +3,7 @@ import { UserService } from '../../services/user.service';
 import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-admin-portal',
@@ -11,29 +12,52 @@ import { CommonModule } from '@angular/common';
   styleUrl: './admin-portal.component.css'
 })
 export class AdminPortalComponent implements OnInit {
-  doctors: string[] = [];
-  patients: string[] = [];
+  users: any[] = [];
+  patients: any[] = [];
+  services: any[] = [];
+  newService = { name: '' };
 
-  constructor(private userService: UserService, private router: Router) {}
+  constructor(
+    private authService: AuthService,  // Inject AuthService
+    private userService: UserService
+  ) {}
 
   ngOnInit() {
-    this.getUsersByRole('Doctor');
-    this.getUsersByRole('Patient');
+    // Fetch doctors using AuthService
+    this.authService.getUsersByRole('Doctor').subscribe((doctors: any[]) => {
+      this.users = doctors;
+    });
+
+    // Fetch patients using AuthService
+    this.authService.getUsersByRole('Patient').subscribe((patients: any[]) => {
+      this.patients = patients;
+    });
+
+    // Fetch services to manage using UserService
+    this.userService.getServices().subscribe((services: any[]) => {
+      this.services = services;
+    });
   }
 
-  // Fetch users by role (Doctor or Patient)
-  getUsersByRole(role: string) {
-    this.userService.getUsersByRole(role).subscribe({
-      next: (users) => {
-        if (role === 'Doctor') {
-          this.doctors = users;
-        } else if (role === 'Patient') {
-          this.patients = users;
-        }
-      },
-      error: (err) => {
-        console.error('Error fetching users by role:', err);
-      }
+  addService() {
+    this.userService.addService(this.newService).subscribe(() => {
+      alert('Service added successfully');
+      this.newService.name = '';
+    });
+  }
+
+  removeService(serviceId: string) {
+    this.userService.removeService(serviceId).subscribe(() => {
+      alert('Service removed successfully');
+      this.services = this.services.filter(service => service.id !== serviceId);
+    });
+  }
+
+  approveService(serviceId: string, doctorId: string) {
+    this.userService.approveDoctorForService(serviceId, doctorId).subscribe(() => {
+      alert('Service approved for the doctor');
+      // You may want to refetch services here after approval
+      this.ngOnInit();
     });
   }
 }

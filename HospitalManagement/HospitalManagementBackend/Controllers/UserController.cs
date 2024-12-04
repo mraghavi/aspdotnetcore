@@ -8,7 +8,7 @@ namespace HospitalManagementBackend.Controllers
     [Route("api/[controller]")]
     public class UserController : ControllerBase
     {
-        // Register method (no change needed)
+        // Register method
         [HttpPost("register")]
         public IActionResult Register([FromBody] User newUser)
         {
@@ -22,7 +22,7 @@ namespace HospitalManagementBackend.Controllers
             return Ok(newUser);
         }
 
-        // Login method (no change needed)
+        // Login method
         [HttpPost("login")]
         public IActionResult Login([FromBody] LoginRequest loginRequest)
         {

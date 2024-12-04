@@ -1,15 +1,42 @@
 <h2>Admin Portal</h2>
 
+<!-- Doctors Section -->
 <div>
   <h3>Doctors</h3>
+  <ul *ngIf="users.length > 0; else noDoctors">
+    <li *ngFor="let user of users">{{ user.username }}</li>
+  </ul>
+  <ng-template #noDoctors>
+    <p>No doctors found</p>
+  </ng-template>
+</div>
+
+<!-- Patients Section -->
+<div>
+  <h3>Patients</h3>
+  <ul *ngIf="patients.length > 0; else noPatients">
+    <li *ngFor="let user of patients">{{ user.username }}</li>
+  </ul>
+  <ng-template #noPatients>
+    <p>No patients found</p>
+  </ng-template>
+</div>
+
+<!-- Services Section -->
+<div>
+  <h3>Services</h3>
   <ul>
-    <li *ngFor="let doctor of doctors">{{ doctor }}</li>
+    <li *ngFor="let service of services">
+      {{ service.name }}
+      <button *ngIf="!service.approved" (click)="approveService(service.id, service.doctorId)">Approve</button>
+      <button (click)="removeService(service.id)">Remove</button>
+    </li>
   </ul>
 </div>
 
+<!-- Add Service Section -->
 <div>
-  <h3>Patients</h3>
-  <ul>
-    <li *ngFor="let patient of patients">{{ patient }}</li>
-  </ul>
+  <h3>Add Service</h3>
+  <input [(ngModel)]="newService.name" placeholder="Service Name" />
+  <button (click)="addService()">Add</button>
 </div>

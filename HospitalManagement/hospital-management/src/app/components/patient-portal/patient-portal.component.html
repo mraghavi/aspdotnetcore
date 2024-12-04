@@ -1,1 +1,15 @@
-<p>patient-portal works!</p>
+<h2>Patient Portal</h2>
+
+<div>
+  <h3>Available Services</h3>
+  <ul>
+    <li *ngFor="let service of servicesWithDoctors">
+      {{ service.name }}
+      <ul>
+        <li *ngFor="let doctor of service.doctors">
+          {{ doctor.name }}
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>

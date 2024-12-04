@@ -1,0 +1,52 @@
+<!-- admin.component.html -->
+<div class="admin-container">
+  <h1>Admin Dashboard</h1>
+
+  <!-- Users List -->
+  <h2>Registered Users</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Role</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.name }}</td>
+
+        <td>{{ user.email }}</td>
+        <td>{{ user.role }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Create Service Form -->
+  <h3>Create a New Service</h3>
+  <form (ngSubmit)="createService()">
+    <label for="name">Service Name:</label>
+    <input type="text" id="name" [(ngModel)]="newService.name" name="name" required />
+
+    <label for="description">Service Description:</label>
+    <textarea id="description" [(ngModel)]="newService.description" name="description" required></textarea>
+
+    <label for="isActive">Is Active:</label>
+    <input type="checkbox" id="isActive" [(ngModel)]="newService.isActive" name="isActive" />
+
+    <button type="submit">Create Service</button>
+  </form>
+
+  <!-- Existing Services List -->
+  <div *ngIf="services.length > 0">
+    <h3>Existing Services</h3>
+    <ul>
+      <li *ngFor="let service of services">
+        <h4>{{ service.name }}</h4>
+        <p>{{ service.description }}</p>
+        <button (click)="editService(service.id)">Edit</button>
+        <button (click)="deleteService(service.id)">Delete</button>
+      </li>
+    </ul>
+  </div>
+</div>

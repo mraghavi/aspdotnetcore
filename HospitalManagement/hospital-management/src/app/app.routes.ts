@@ -6,11 +6,15 @@ import { PatientPortalComponent } from './components/patient-portal/patient-port
 import { DoctorPortalComponent } from './components/doctor-portal/doctor-portal.component';
 
 export const routes: Routes = [
-
     { path: 'register', component: RegisterComponent },
     { path: 'login', component: LoginComponent },
-    { path: 'admin', component: AdminPortalComponent },
-    { path: 'doctor', component: DoctorPortalComponent },
-    { path: 'patient', component: PatientPortalComponent },
-    { path: '**', redirectTo: '' }
-];
+    { path: 'admin-portal', component: AdminPortalComponent }, // Updated to 'admin-portal'
+    { path: 'doctor-portal', component: DoctorPortalComponent }, // Updated to 'doctor-portal'
+    { path: 'patient-portal', component: PatientPortalComponent }, // Updated to 'patient-portal'
+    
+    // Redirect unknown paths to the login page
+    { path: '', redirectTo: '/login', pathMatch: 'full' }, 
+  
+    // Wildcard route for undefined paths
+    { path: '**', redirectTo: '/login' }
+  ];

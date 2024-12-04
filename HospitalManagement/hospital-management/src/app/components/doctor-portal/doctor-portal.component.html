@@ -1,1 +1,20 @@
-<p>doctor-portal works!</p>
+<h2>Doctor Portal</h2>
+
+<div>
+  <h3>Pending Services</h3>
+  <ul>
+    <li *ngFor="let service of pendingServices">
+      {{ service.name }} 
+      <button (click)="registerForService(service.id)">Register</button>
+    </li>
+  </ul>
+</div>
+
+<div>
+  <h3>Approved Services</h3>
+  <ul>
+    <li *ngFor="let service of approvedServices">
+      {{ service.name }}
+    </li>
+  </ul>
+</div>

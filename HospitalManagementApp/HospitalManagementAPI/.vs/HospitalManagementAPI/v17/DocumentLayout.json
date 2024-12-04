@@ -1,0 +1,187 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\aspdotnetcore\\HospitalManagementApp\\HospitalManagementAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{743C1DE4-8AD5-4DEE-9D77-149986991AC8}|HospitalManagementAPI.csproj|d:\\aspdotnetcore\\hospitalmanagementapp\\hospitalmanagementapi\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{743C1DE4-8AD5-4DEE-9D77-149986991AC8}|HospitalManagementAPI.csproj|solutionrelative:controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{743C1DE4-8AD5-4DEE-9D77-149986991AC8}|HospitalManagementAPI.csproj|d:\\aspdotnetcore\\hospitalmanagementapp\\hospitalmanagementapi\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{743C1DE4-8AD5-4DEE-9D77-149986991AC8}|HospitalManagementAPI.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{743C1DE4-8AD5-4DEE-9D77-149986991AC8}|HospitalManagementAPI.csproj|d:\\aspdotnetcore\\hospitalmanagementapp\\hospitalmanagementapi\\models\\doctorserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{743C1DE4-8AD5-4DEE-9D77-149986991AC8}|HospitalManagementAPI.csproj|solutionrelative:models\\doctorserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{743C1DE4-8AD5-4DEE-9D77-149986991AC8}|HospitalManagementAPI.csproj|d:\\aspdotnetcore\\hospitalmanagementapp\\hospitalmanagementapi\\models\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{743C1DE4-8AD5-4DEE-9D77-149986991AC8}|HospitalManagementAPI.csproj|solutionrelative:models\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{743C1DE4-8AD5-4DEE-9D77-149986991AC8}|HospitalManagementAPI.csproj|d:\\aspdotnetcore\\hospitalmanagementapp\\hospitalmanagementapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{743C1DE4-8AD5-4DEE-9D77-149986991AC8}|HospitalManagementAPI.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{743C1DE4-8AD5-4DEE-9D77-149986991AC8}|HospitalManagementAPI.csproj|d:\\aspdotnetcore\\hospitalmanagementapp\\hospitalmanagementapi\\data\\mockrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{743C1DE4-8AD5-4DEE-9D77-149986991AC8}|HospitalManagementAPI.csproj|solutionrelative:data\\mockrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{743C1DE4-8AD5-4DEE-9D77-149986991AC8}|HospitalManagementAPI.csproj|d:\\aspdotnetcore\\hospitalmanagementapp\\hospitalmanagementapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{743C1DE4-8AD5-4DEE-9D77-149986991AC8}|HospitalManagementAPI.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{743C1DE4-8AD5-4DEE-9D77-149986991AC8}|HospitalManagementAPI.csproj|d:\\aspdotnetcore\\hospitalmanagementapp\\hospitalmanagementapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{743C1DE4-8AD5-4DEE-9D77-149986991AC8}|HospitalManagementAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{743C1DE4-8AD5-4DEE-9D77-149986991AC8}|HospitalManagementAPI.csproj|d:\\aspdotnetcore\\hospitalmanagementapp\\hospitalmanagementapi\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{743C1DE4-8AD5-4DEE-9D77-149986991AC8}|HospitalManagementAPI.csproj|solutionrelative:controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{743C1DE4-8AD5-4DEE-9D77-149986991AC8}|HospitalManagementAPI.csproj|d:\\aspdotnetcore\\hospitalmanagementapp\\hospitalmanagementapi\\hospitalmanagementapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{743C1DE4-8AD5-4DEE-9D77-149986991AC8}|HospitalManagementAPI.csproj|solutionrelative:hospitalmanagementapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\aspdotnetcore\\HospitalManagementApp\\HospitalManagementAPI\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "D:\\aspdotnetcore\\HospitalManagementApp\\HospitalManagementAPI\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T08:01:29.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DoctorServiceRegistration.cs",
+              "DocumentMoniker": "D:\\aspdotnetcore\\HospitalManagementApp\\HospitalManagementAPI\\Models\\DoctorServiceRegistration.cs",
+              "RelativeDocumentMoniker": "Models\\DoctorServiceRegistration.cs",
+              "ToolTip": "D:\\aspdotnetcore\\HospitalManagementApp\\HospitalManagementAPI\\Models\\DoctorServiceRegistration.cs",
+              "RelativeToolTip": "Models\\DoctorServiceRegistration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T08:36:29.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DoctorController.cs",
+              "DocumentMoniker": "D:\\aspdotnetcore\\HospitalManagementApp\\HospitalManagementAPI\\Controllers\\DoctorController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DoctorController.cs",
+              "ToolTip": "D:\\aspdotnetcore\\HospitalManagementApp\\HospitalManagementAPI\\Controllers\\DoctorController.cs",
+              "RelativeToolTip": "Controllers\\DoctorController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T08:05:18.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MockRepository.cs",
+              "DocumentMoniker": "D:\\aspdotnetcore\\HospitalManagementApp\\HospitalManagementAPI\\Data\\MockRepository.cs",
+              "RelativeDocumentMoniker": "Data\\MockRepository.cs",
+              "ToolTip": "D:\\aspdotnetcore\\HospitalManagementApp\\HospitalManagementAPI\\Data\\MockRepository.cs",
+              "RelativeToolTip": "Data\\MockRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T08:02:59.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\aspdotnetcore\\HospitalManagementApp\\HospitalManagementAPI\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "D:\\aspdotnetcore\\HospitalManagementApp\\HospitalManagementAPI\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAiwEwAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T08:04:40.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\aspdotnetcore\\HospitalManagementApp\\HospitalManagementAPI\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "D:\\aspdotnetcore\\HospitalManagementApp\\HospitalManagementAPI\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T08:04:06.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Service.cs",
+              "DocumentMoniker": "D:\\aspdotnetcore\\HospitalManagementApp\\HospitalManagementAPI\\Models\\Service.cs",
+              "RelativeDocumentMoniker": "Models\\Service.cs",
+              "ToolTip": "D:\\aspdotnetcore\\HospitalManagementApp\\HospitalManagementAPI\\Models\\Service.cs",
+              "RelativeToolTip": "Models\\Service.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T08:02:13.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\aspdotnetcore\\HospitalManagementApp\\HospitalManagementAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\aspdotnetcore\\HospitalManagementApp\\HospitalManagementAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABIAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T07:58:38.16Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PatientController.cs",
+              "DocumentMoniker": "D:\\aspdotnetcore\\HospitalManagementApp\\HospitalManagementAPI\\Controllers\\PatientController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PatientController.cs",
+              "ToolTip": "D:\\aspdotnetcore\\HospitalManagementApp\\HospitalManagementAPI\\Controllers\\PatientController.cs",
+              "RelativeToolTip": "Controllers\\PatientController.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAADwvwsAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T08:52:43.007Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HospitalManagementAPI.csproj",
+              "DocumentMoniker": "D:\\aspdotnetcore\\HospitalManagementApp\\HospitalManagementAPI\\HospitalManagementAPI.csproj",
+              "RelativeDocumentMoniker": "HospitalManagementAPI.csproj",
+              "ToolTip": "D:\\aspdotnetcore\\HospitalManagementApp\\HospitalManagementAPI\\HospitalManagementAPI.csproj",
+              "RelativeToolTip": "HospitalManagementAPI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-02T08:00:49.061Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

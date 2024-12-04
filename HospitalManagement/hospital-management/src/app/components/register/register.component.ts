@@ -2,31 +2,39 @@ import { Component } from '@angular/core';
 import { UserService } from '../../services/user.service';
 import { Router, RouterLink } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { AuthService } from '../../services/auth.service';
+import { tap } from 'rxjs/operators';
+import { catchError } from 'rxjs/operators';
+import { of } from 'rxjs';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-register',
-  imports: [FormsModule,RouterLink],
+  imports: [FormsModule,CommonModule],
   templateUrl: './register.component.html',
   styleUrl: './register.component.css'
 })
 export class RegisterComponent {
-  newUser = {
-    role: '',
+  user = {
     username: '',
-    password: ''
+    password: '',
+    role: 'Patient'  // Default role
   };
 
-  constructor(private userService: UserService, private router: Router) {}
+  constructor(private authService: AuthService, private router: Router) {}
 
-  onSubmit() {
-    this.userService.register(this.newUser).subscribe({
-      next: (response) => {
-        alert('User registered successfully');
-        this.router.navigate(['/login']);
-      },
-      error: (error) => {
-        alert('Error registering user: ' + error.error);
-      }
-    });
+  register() {
+    this.authService.register(this.user)
+      .pipe(
+        tap(response => {
+          alert('Registration successful!');
+          this.router.navigate(['/login']);
+        }),
+        catchError(error => {
+          alert('Registration failed.');
+          return of(null); // Handle the error and return an observable
+        })
+      )
+      .subscribe();
   }
-}
+} 
